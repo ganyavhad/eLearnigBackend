@@ -99,11 +99,11 @@ Now Ui Category
 │   │   │   ├── notifications.component.html
 │   │   │   ├── notifications.component.spec.ts
 │   │   │   └── notifications.component.ts
-│   │   ├── table-list
-│   │   │   ├── table-list.component.css
-│   │   │   ├── table-list.component.html
-│   │   │   ├── table-list.component.spec.ts
-│   │   │   └── table-list.component.ts
+│   │   ├── playlist
+│   │   │   ├── playlist.component.css
+│   │   │   ├── playlist.component.html
+│   │   │   ├── playlist.component.spec.ts
+│   │   │   └── playlist.component.ts
 │   │   ├── typography
 │   │   │   ├── typography.component.css
 │   │   │   ├── typography.component.html

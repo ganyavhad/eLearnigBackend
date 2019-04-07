@@ -1,0 +1,60 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title"> Simple Table</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead class=" text-primary">
+                <th>
+                  Category
+                </th>
+                <th>
+                  Sub-Category
+                </th>
+                <th>
+                  Channel
+                </th>
+                <th>
+                  Url
+                </th>
+                <th>
+                  Action
+                </th>
+              </thead>
+              <tbody>
+                <tr *ngFor="let playlist of playlists">
+                  <td>
+                    {{playlist.category}}
+                  </td>
+                  <td>
+                    {{playlist.subcategory}}
+                  </td>
+                  <td>
+                    {{playlist.channel}}
+                  </td>
+                  <td>
+                    {{playlist.url}}
+                  </td>
+                  <td>
+                    <span>
+                      <i class="fa fa-edit text-info" aria-hidden="true"></i>
+                    </span>
+                    <span>
+                      <i class="fa fa-trash text-danger" aria-hidden="true"></i>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
