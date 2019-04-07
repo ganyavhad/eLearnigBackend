@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "now-ui-dashboard-angular": {
+    "now-ui-category-angular": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -23,7 +23,7 @@
             "styles": [
               "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
               "node_modules/ngx-toastr/toastr.css",
-              "src/assets/scss/now-ui-dashboard.scss",
+              "src/assets/scss/now-ui-category.scss",
               "src/assets/demo/demo.css"
             ],
             "scripts": [
@@ -53,18 +53,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "now-ui-dashboard-angular:build"
+            "browserTarget": "now-ui-category-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "now-ui-dashboard-angular:build:production"
+              "browserTarget": "now-ui-category-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "now-ui-dashboard-angular:build"
+            "browserTarget": "now-ui-category-angular:build"
           }
         },
         "test": {
@@ -80,7 +80,7 @@
             "styles": [
               "node_modules/perfect-scrollbar/css/perfect-scrollbar.css",
               "node_modules/ngx-toastr/toastr.css",
-              "src/assets/scss/now-ui-dashboard.scss",
+              "src/assets/scss/now-ui-category.scss",
               "src/assets/demo/demo.css"
             ],
             "assets": [
@@ -101,7 +101,7 @@
         }
       }
     },
-    "now-ui-dashboard-angular-e2e": {
+    "now-ui-category-angular-e2e": {
       "root": "e2e",
       "sourceRoot": "e2e",
       "projectType": "application",
@@ -110,7 +110,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "now-ui-dashboard-angular:serve"
+            "devServerTarget": "now-ui-category-angular:serve"
           }
         },
         "lint": {
@@ -125,7 +125,7 @@
       }
     }
   },
-  "defaultProject": "now-ui-dashboard-angular",
+  "defaultProject": "now-ui-category-angular",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",

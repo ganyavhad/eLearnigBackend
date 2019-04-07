@@ -1,10 +1,10 @@
-import { MaterialDashboardAngularPage } from './app.po';
+import { MaterialCategoryAngularPage } from './app.po';
 
-describe('material-dashboard-angular App', () => {
-  let page: MaterialDashboardAngularPage;
+describe('material-category-angular App', () => {
+  let page: MaterialCategoryAngularPage;
 
   beforeEach(() => {
-    page = new MaterialDashboardAngularPage();
+    page = new MaterialCategoryAngularPage();
   });
 
   it('should display message saying app works', () => {

@@ -1,0 +1,51 @@
+/*!
+
+ =========================================================
+ * Now UI Category Angular - v1.1.0
+ =========================================================
+
+ * Product Page: https://www.creative-tim.com/product/now-ui-category-angular
+ * Copyright 2018 Creative Tim (https://www.creative-tim.com)
+
+ * Designed by www.invisionapp.com Coded by www.creative-tim.com
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+ @import "~bootstrap/scss/bootstrap";
+ @import 'now-ui-category/variables';
+ @import 'now-ui-category/mixins';
+
+ // Plugins CSS
+ @import "now-ui-category/plugins/plugin-animate-bootstrap-notify";
+ @import "now-ui-category/plugins/plugin-perfect-scrollbar";
+
+ // Core CSS
+ @import "now-ui-category/buttons";
+ @import "now-ui-category/inputs";
+ @import "now-ui-category/typography";
+ @import "now-ui-category/misc";
+ @import "now-ui-category/checkboxes-radio";
+
+ // components
+ @import "now-ui-category/navbar";
+ @import "now-ui-category/page-header";
+ @import "now-ui-category/dropdown";
+ @import "now-ui-category/alerts";
+ @import "now-ui-category/images";
+ @import "now-ui-category/nucleo-outline";
+ @import "now-ui-category/tables";
+ @import "now-ui-category/sidebar-and-main-panel";
+ @import "now-ui-category/footers";
+ @import "now-ui-category/fixed-plugin";
+
+ // cards
+ @import "now-ui-category/cards";
+ @import "now-ui-category/cards/card-plain";
+ @import "now-ui-category/cards/card-chart";
+ @import "now-ui-category/cards/card-user";
+ @import "now-ui-category/cards/card-map";
+
+ @import "now-ui-category/responsive";
