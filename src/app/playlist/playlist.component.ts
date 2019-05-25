@@ -12,9 +12,7 @@ export class PlaylistComponent implements OnInit {
   private playlists: Playlist[] = [];
   isPlaylist = false;
   message = 'Loading...';
-  constructor(
-    public apiService: ApiService
-  ) {
+  loadPlaylist() {
     this.apiService.getPlayLists().subscribe((res: Playlist[]) => {
       console.log(res)
       this.playlists = res;
@@ -28,6 +26,11 @@ export class PlaylistComponent implements OnInit {
         this.message = 'Failed to load data';
       }
     });
+  }
+  constructor(
+    public apiService: ApiService
+  ) {
+    this.loadPlaylist()
   }
 
 
@@ -51,5 +54,6 @@ export class PlaylistComponent implements OnInit {
     const reader = new FileReader();
     reader.readAsDataURL(file);
     this.apiService.uploadExcel(this.form.value.image)
+    this.loadPlaylist()
   }
 }
