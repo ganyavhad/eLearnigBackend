@@ -9,12 +9,17 @@
             <h4 class="card-title">Playlists</h4>
           </div>
           <div class="col-sm-2">
-            <button class="btn-primary">
-              <!-- <input type="file" id="exampleFormControlFile1"> -->
-              Upload Excel
-            </button>
+            <form [formGroup]="form">
+              <!-- <button class="btn-primary"> -->
+              <button class="btn-primary" (click)="filePicker.click()">Upload Excel</button>
+              <input type="file" #filePicker (change)="onFilePicked($event)">
+              <!-- </button> -->
+            </form>
           </div>
         </div>
+        <pre>
+          {{playlists|json}}
+        </pre>
         <div class="card-body">
           <div class="table-responsive">
             <table class="table">
@@ -38,10 +43,10 @@
               <tbody>
                 <tr *ngFor="let playlist of playlists">
                   <td>
-                    {{playlist.category}}
+                    {{playlist.Category}}
                   </td>
                   <td>
-                    {{playlist.subcategory}}
+                    {{playlist.Subcategory}}
                   </td>
                   <td>
                     {{playlist.channel}}

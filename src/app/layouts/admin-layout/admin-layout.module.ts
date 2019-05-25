@@ -16,6 +16,7 @@ import { ToastrModule } from 'ngx-toastr';
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
+    ReactiveFormsModule,
     ChartsModule,
     NgbModule,
     ToastrModule.forRoot()
