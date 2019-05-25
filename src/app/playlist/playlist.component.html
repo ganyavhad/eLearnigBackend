@@ -19,7 +19,10 @@
         </div>
         <div class="card-body">
           <div class="table-responsive">
-            <table class="table">
+            <div *ngIf="!isPlaylist">
+              <span>{{message}}</span>
+            </div>
+            <table class="table" *ngIf="isPlaylist">
               <thead class=" text-primary">
                 <th>
                   Category
@@ -32,6 +35,9 @@
                 </th>
                 <th>
                   Url
+                </th>
+                <th>
+                  keywords
                 </th>
                 <th>
                   Action
@@ -50,6 +56,9 @@
                   </td>
                   <td>
                     {{playlist.url}}
+                  </td>
+                  <td>
+                    {{playlist.keywords}}
                   </td>
                   <td>
                     <span>

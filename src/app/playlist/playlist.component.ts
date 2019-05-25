@@ -10,11 +10,23 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 export class PlaylistComponent implements OnInit {
   form: FormGroup;
   private playlists: Playlist[] = [];
+  isPlaylist = false;
+  message = 'Loading...';
   constructor(
     public apiService: ApiService
   ) {
     this.apiService.getPlayLists().subscribe((res: Playlist[]) => {
+      console.log(res)
       this.playlists = res;
+      this.isPlaylist = true;
+    }, err => {
+      console.log(err)
+      this.isPlaylist = false;
+      if (err.error == 'noDataFound') {
+        this.message = 'No Data Found';
+      } else {
+        this.message = 'Failed to load data';
+      }
     });
   }
 
